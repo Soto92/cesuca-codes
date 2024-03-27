@@ -8,20 +8,18 @@
 |  Espaço |     O(1)     |    O(1)     |    O(1)    |
 
 ```javascript
-function bubbleSort(array) {
-    const len = array.length;
-
-    for (let i = 0; i < len - 1; i++) {
-        for (let j = 0; j < len - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                const temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
-            }
+function bubbleSort () {
+    for (let i = 0; i < bubble.length; i++) {
+        if (bubble[i] > bubble[i +1]) {
+            let v1 = bubble[i]
+            let v2 = bubble[i +1] 
+            bubble[i] = v2
+            bubble[i +1] = v1
         }
     }
-    return array;
 }
+
+console.log(bubbleSort([8,5,1,3,9]))
 ```
 
 ## InsertionSort
